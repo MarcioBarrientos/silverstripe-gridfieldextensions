@@ -216,6 +216,7 @@ class GridFieldOrderableRows extends RequestHandler implements
     {
         GridFieldExtensions::include_requirements();
 
+        $field->addExtraClass('ss-gridfield-extensions');
         $field->addExtraClass('ss-gridfield-orderable');
         $field->setAttribute('data-immediate-update', (string)(int)$this->immediateUpdate);
         $field->setAttribute('data-url-reorder', $field->Link('reorder'));

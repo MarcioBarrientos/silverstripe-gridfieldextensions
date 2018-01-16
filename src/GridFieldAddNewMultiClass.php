@@ -248,6 +248,7 @@ class GridFieldAddNewMultiClass implements GridField_HTMLProvider, GridField_URL
         if (Config::inst()->get(__CLASS__, 'showEmptyString')) {
             $field->setEmptyString(_t('GridFieldExtensions.SELECTTYPETOCREATE', '(Select type to create)'));
         }
+        $field->addExtraClass('ss-gridfield-extensions');
         $field->addExtraClass('no-change-track');
 
         $data = new ArrayData(array(

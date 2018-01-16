@@ -250,7 +250,7 @@
 		 * GridFieldEditableColumns
 		 */
 
-		$('.grid-field .ss-gridfield-item').entwine({
+		$('.grid-field.ss-gridfield-extensions .ss-gridfield-item').entwine({
 			onclick: function(e) {
 				// Prevent the default row click action when clicking a cell that contains a field
 				if (this.find('.editable-column-field').length) {
